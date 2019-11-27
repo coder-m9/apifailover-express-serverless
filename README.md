@@ -1,4 +1,4 @@
-### Features
+## Features
 
 Handles API Failover. When an API Fails (or) return an error response, it calls the next available API and process.
 
