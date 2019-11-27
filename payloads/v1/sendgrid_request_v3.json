@@ -1,0 +1,34 @@
+{
+  "personalizations": [
+    {
+      "to": [
+        {
+          "email": "testto1634@gmail.com",
+          "name": "Test"
+        }
+      ],
+      "cc": [
+        {
+          "email": "testcc1634@gmail.com",
+          "name": "Test"
+        }
+      ],
+      "bcc": [
+        {
+          "email": "testbcc1634@gmail.com",
+          "name": "Test"
+        }
+      ]
+    }
+  ],
+  "from": {
+    "email": "devemailsender100@gmail.com"
+  },
+  "subject": "Sending with SendGrid is Fun",
+  "content": [
+    {
+      "type": "text/plain",
+      "value": "Test"
+    }
+  ]
+}

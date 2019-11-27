@@ -1,0 +1,13 @@
+{
+  "errors": [
+    {
+      "recipients[0].to": "Atlest one email should be given in To"
+    },
+    {
+      "recipients[0].cc": "Invalid Value for Cc"
+    },
+    {
+      "recipients[0].bcc": "Invalid Value for Bcc"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "errors": [
+    {
+      "recipients[0]": "No duplicate emails in To,Cc,Bcc"
+    },
+    {
+      "recipients[0].to[0].email": "Invalid Email"
+    },
+    {
+      "recipients[0].to[0].name": "Invalid length for name"
+    },
+    {
+      "recipients[0].to[1].name": "Invalid length for name"
+    },
+    {
+      "recipients[0].to[2].name": "Invalid length for name"
+    },
+    {
+      "recipients[0].cc[0].email": "Invalid Email"
+    },
+    {
+      "recipients[0].cc[0].email": "Invalid length for email"
+    },
+    {
+      "recipients[0].cc[0].name": "Invalid length for name"
+    },
+    {
+      "recipients[0].bcc[0].email": "Invalid Email"
+    },
+    {
+      "recipients[0].bcc[0].name": "Invalid length for name"
+    },
+    {
+      "from.name": "Invalid length for name"
+    },
+    {
+      "subject": "Subject should be minimum length 2"
+    },
+    {
+      "content.value": "Subject should be minimum length 20"
+    }
+  ]
+}

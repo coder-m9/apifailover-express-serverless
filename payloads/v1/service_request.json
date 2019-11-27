@@ -1,0 +1,35 @@
+{
+  "from": {
+    "email": "devemailsender100@gmail.com",
+    "name": "TestFrom"
+  },
+  "subject": "Test Subject",
+
+  "content": {
+    "type": "text/plain",
+    "value": "Test. Test. Test. Test. Test. Test. Test. Test. Test."
+  },
+
+  "recipients": [
+    {
+      "to": [
+        {
+          "email": "testto1634@gmail.com",
+          "name": "TestTo"
+        }
+      ],
+      "cc": [
+        {
+          "email": "testcc1634@gmail.com",
+          "name": "TestCc"
+        }
+      ],
+      "bcc": [
+        {
+          "email": "testbcc1634@gmail.com",
+          "name": "TestBcc"
+        }
+      ]
+    }
+  ]
+}

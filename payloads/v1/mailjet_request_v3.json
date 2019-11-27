@@ -1,0 +1,18 @@
+{
+  "Messages": [
+    {
+      "From": {
+        "Email": "devemailsender100@gmail.com",
+        "Name": "test"
+      },
+      "To": [
+        {
+          "Email": "testto1634@gmail.com",
+          "Name": "test"
+        }
+      ],
+      "Subject": "My first Mailjet email",
+      "TextPart": "Greetings from Mailjet."
+    }
+  ]
+}

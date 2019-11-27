@@ -1,0 +1,43 @@
+{
+  "from": {
+    "email": "devemailsender100@gmail.com",
+    "name": "T"
+  },
+  "subject": "T",
+
+  "content": {
+    "type": "text/plain",
+    "value": "T"
+  },
+
+  "recipients": [
+    {
+      "to": [
+        {
+          "email": "testto1634gmail.com",
+          "name": "T"
+        },
+        {
+          "email": "testto1634@gmail.com",
+          "name": "T"
+        },
+        {
+          "email": "testto1634@gmail.com",
+          "name": "T"
+        }
+      ],
+      "cc": [
+        {
+          "email": "testcc163cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc@gmail.com",
+          "name": "T"
+        }
+      ],
+      "bcc": [
+        {
+          "email": "testbcc1634gmail.com",
+          "name": "TestBccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+        }
+      ]
+    }
+  ]
+}

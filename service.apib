@@ -1,0 +1,105 @@
+FORMAT: 1A
+HOST: http://localhost:3001
+
+# Email API
+
+
+## Send Email [/api/v1/email/send]
+
+### POST the Email Data [POST]
+
+Send Email API  has following features
+
+ + Send a single email to multiple addresses in To, CC, BCC.
+ + Send Multiple emails and each email can contain multiple addresses in To, CC, BCC.
+ + Support only text based email
+ + from, subject, content are same for all emails
+
++ Request (application/json)   
+
+
+    + Body
+
+                        {
+              	"from": {
+              		"email": "devemailsender100@gmail.com",
+              		"name": "TestFrom"
+              	},
+              	"subject": "Test Subject",
+
+              	"content": {
+              		"type": "text/plain",
+              		"value": "Test. Test. Test. Test. Test. Test. Test. Test. Test."
+              	},
+
+              	"recipients": [{
+              		"to": [{
+              			"email": "testto1634@gmail.com",
+              			"name": "TestTo"
+              		}],
+              		"cc": [{
+              			"email": "testcc1634@gmail.com",
+              			"name": "TestCc"
+              		}],
+              		"bcc": [{
+              			"email": "testbcc1634@gmail.com",
+              			"name": "TestBcc"
+              		}]
+              	}]
+              }
+
+
++ Response 200 (application/json)
+
+        {
+         "message": "Email Sent Successfully"
+        }
+
++ Response 400 (application/json)
+
+        {
+        "errors": [
+        {
+            "recipients[0]": "No duplicate emails in To,Cc,Bcc"
+        },
+        {
+            "recipients[0].to[0].email": "Invalid Email"
+        },
+        {
+            "recipients[0].to[0].name": "Invalid length for name"
+        },
+        {
+            "recipients[0].to[1].name": "Invalid length for name"
+        },
+        {
+            "recipients[0].to[2].name": "Invalid length for name"
+        },
+        {
+            "recipients[0].cc[0].email": "Invalid Email"
+        },
+        {
+            "recipients[0].cc[0].email": "Invalid length for email"
+        },
+        {
+            "recipients[0].cc[0].name": "Name should contain only alphabets"
+        },
+        {
+            "recipients[0].bcc[0].email": "Invalid Email"
+        },
+        {
+            "recipients[0].bcc[0].name": "Invalid length for name"
+        },
+        {
+            "from.email": "Invalid Email"
+        },
+        {
+            "from.name": "Name should contain only alphabets"
+        },
+        {
+            "subject": "Subject should be minimum length 2"
+        },
+        {
+            "content.value": "Subject should be minimum length 20"
+        }
+        ]
+        }

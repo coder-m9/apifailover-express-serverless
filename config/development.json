@@ -1,0 +1,11 @@
+{
+  "emailProviders": [
+    { "provider": "sendGrid", "active": true, "priority": 2 },
+    { "provider": "mailJet", "active": true, "priority": 1 }
+  ],
+
+  "url": {
+    "sendGrid": "https://api.sendgrid.com/v3/mail/send",
+    "mailJet": "https://api.mailjet.com/v3.1/send"
+  }
+}
