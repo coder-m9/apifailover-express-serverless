@@ -2,7 +2,7 @@
 
 Handles API Failover. When an API Fails (or) return an error response, it calls the next available API and process.
 
-API Priority and active status are maintained in the config. This application does send email functionality by calling the email provider API.
+API Priority and active status are maintained in the config. This application acts as a wrapper to send emails by calling the external email provider API.
 
 ## AWS Lambda Deployment For Express using Serverless Framework
 
