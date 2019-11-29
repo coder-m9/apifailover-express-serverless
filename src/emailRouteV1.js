@@ -1,11 +1,8 @@
 const express = require("express");
 
 const router = express.Router();
-const emailController = require("../controller/v1/emailController");
-const {
-  emailSendValidationRules,
-  validate
-} = require("../validator/v1/emailValidator");
+const emailController = require("./emailController");
+const { emailSendValidationRules, validate } = require("./emailValidator");
 
 router.post(
   "/send",

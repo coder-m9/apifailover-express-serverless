@@ -4,7 +4,7 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const serverless = require("serverless-http");
-const emailRouterV1 = require("./routes/emailV1");
+const emailRouterV1 = require("./src/emailRouteV1");
 
 const app = express();
 

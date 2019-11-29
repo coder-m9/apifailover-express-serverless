@@ -1,6 +1,6 @@
 const config = require("config");
-const { sendEmailSendGrid } = require("../../service/v1/sendGridService");
-const { sendEmailMailJet } = require("../../service/v1/mailJetService");
+const { sendEmailSendGrid } = require("./sendGridService");
+const { sendEmailMailJet } = require("./mailJetService");
 
 require("dotenv").config();
 
